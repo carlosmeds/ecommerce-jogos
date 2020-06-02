@@ -219,12 +219,12 @@ iframe {
 }
 
 .wrap-input100.rs1 {
-  border-top-left-radius: 12px;
+  border-top-left-radius: 0px;
   border-right: none;
 }
 
 .wrap-input100.rs2 {
-  border-top-right-radius: 12px;
+  border-top-right-radius: 0px;
 }
 
 .label-input100 {
