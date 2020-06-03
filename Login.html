@@ -26,13 +26,36 @@
 	<link rel="stylesheet" type="text/css" href="Login_v20/css/util.css">
 	<link rel="stylesheet" type="text/css" href="Login_v20/css/main.css">
 <!--===============================================================================================-->
+<script>
+		function validar(){
+			var formulario = document.getElementById("formulario-test");
+			//alert(formulario);
+			var name = formulario.username.value;
+			//alert(name);
+			var senha = formulario.pass.value;
+			if(name === "admin"){
+				if(senha === "admin"){
+					//ELE EH ADMINISTRADOR VAI PARA O CADASTRO DE PRODUTOS
+					window.location.href = "CadastraProdutos.html";
+				}
+			}
+			else if(name === ""){
+				if(senha === "")
+				//ELE NAO EH ADMINISTRADOR PORTANTO IRA PARA O LOGIN NORMAL
+					window.location.href = "Login.html";
+			}
+			else{
+				window.location.href = "index.html";
+			}
+		}
+</script>
 </head>
 <body>
 
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-b-160 p-t-50">
-				<form class="login100-form validate-form" action="index.html">
+				<form class="login100-form validate-form" id="formulario-test" action="javascript:validar()">
 					<span class="login100-form-title p-b-43">
 						Login Account
 					</span>
