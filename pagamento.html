@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Pagamento</title>
 		
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,8 +56,8 @@ and open the template in the editor.
 html,
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size-adjust: u
-  display: flex;
+  /* font-size-adjust: u */
+  /* display: flex; */
   width: 100%;
   height: 100%;
   background: #eeeeee;
@@ -331,8 +331,8 @@ $('.next-btn').on('click', function(e) {
 			<nav class="main-menu">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="review.html">Games</a></li>
-					<li><a href="Historico.html">Biblioteca</a></li>
+					<li><a href="lista-jogos.html">Games</a></li>
+					<li><a href="Historico.html">Meus jogos</a></li>
 					<li><a href="community.html">Forum</a></li>
 				
 				</ul>
@@ -342,15 +342,7 @@ $('.next-btn').on('click', function(e) {
 	<div style="padding-left:12%; padding-top:30px;">
       <div class="checkout-panel">
   <div class="panel-body">
-    <h2 class="title">Pagamento!</h2>
- 
-    <div class="progress-bar">
-      <div class="step active"></div>
-      <div class="step active"></div>
-      <div class="step"></div>
-      <div class="step"></div>
-    </div>
- 
+    <h2 class="title">Pagamento</h2>
     <div class="payment-method">
       <label for="card" class="method card">
         <div class="card-logos">
@@ -398,12 +390,11 @@ $('.next-btn').on('click', function(e) {
         <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
       </div>
     </div>
-  </div>
- 
-  <div class="panel-footer">
-    <a href="review.html"><button class="btn back-btn">Back</button></a>
+    
+    <a href="lista-jogos.html"><button class="btn back-btn">Voltar</button></a>
     <a href="boleto.html"><button class="btn next-btn">Pagar</button></a>
   </div>
+ 
 </div>    
     </body>
 </html>
