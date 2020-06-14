@@ -24,7 +24,13 @@
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
+<style>
+.alinhado{
+	position:absolute;
+	left: 37%;
+	top: -15%;
+}
+</style>
 </head>
 <body>
 	<!-- Page Preloder -->
@@ -50,14 +56,15 @@
 			<nav class="main-menu">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="lista-jogos.html">Games</a></li>
-					<li><a href="categories.html">Blog</a></li>
-					<li><a href="community.html">Forums</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="review.html">Games</a></li>
+					<li><a href="Historico.html">Biblioteca</a></li>
+					<li><a href="community.html">Forum</a></li>
+				
 				</ul>
 			</nav>
 		</div>
 	</header>
+	
 	<!-- Header section end -->
 
 
@@ -94,17 +101,33 @@
 
 
 	<!-- Footer top section -->
-	<section class="footer-top-section">
+	<section class="recent-game-section spad set-bg" data-setbg="img/recent-game-bg.png">
+	<div class="col-lg-12">
+	<div class="alinhado">
+					<div class="footer-widget">
+	<div class="footer-logo">
+						<img src="img/footer-logo.png" alt=""></div>
+						</div>
+						</div>
+						<br><br>
 		<div class="container">
-			<div class="footer-top-bg">
-				<img src="img/footer-top-bg.png" alt="">
-			</div>
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="footer-logo text-white">
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-widget text-white">
+					<div class="footer-logo">
 						<img src="img/footer-logo.png" alt="">
 						<p>A G-Shop Games é um site de compra de Jogos. Nosso site possui jogos de diversas plataformas e permite que as plataformas intejaram uma com as outras.
 						Este fator acontece por termos um servidor próprio que conecta todas as plataformas no mesmo servidor.</p>
+					</div>
+					<div class="latest-blog">
+							<div class="lb-item">
+								<div class="lb-thumb set-bg" data-setbg="img/joao.jpg"></div>
+								<div class="lb-content">
+									<p><h4 style="color:white">Joao Carlos<h4></p>
+									<p>João é o mais novo funcionario da empresa JECA_GAMES, Desenvolvedor da JECA_GAMES </p>
+								</div>
+							</div>
+							</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -165,15 +188,20 @@
 		<div class="container">
 			<h2>Localização:</h2>
 			<div class="map" id="map-canvas"></div>
+			</div>
+		</section>
+		<section class="recent-game-section spad set-bg" data-setbg="img/recent-game-bg.png">
+		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 mb-5 mb-lg-0">
 					<h4 class="comment-title">Contato:</h4>
+					<p>Nossa empresa possui a loja virtual com o site www.JECA_GAMES.com e a nossa loja fisica que se localza atualmente em Curitiba.</p>
 					<div class="row">
 						<div class="col-md-9">
 							<ul class="contact-info-list">
-								<li><div class="cf-left">Endereço</div><div class="cf-right">Curitiba - PR, Rua Delegado Medeiros, 266</div></li>
-								<li><div class="cf-left">Telefone</div><div class="cf-right">(041) 98345-3123</div></li>
-								<li><div class="cf-left">E-mail</div><div class="cf-right">jecagames@gmail.com</div></li>
+								<li><div class="cf-left">Endereço</div><div class="cf-right">Brasil, Paraná, Curitiba, Rua Delegado Medeiros, 266</div></li>
+								<li><div class="cf-left">Phone</div><div class="cf-right">+55 (041) 98345-3123</div></li>
+								<li><div class="cf-left">E-mail</div><div class="cf-right">JECA_GAMES@gmail.com</div></li>
 							</ul>
 						</div>
 					</div>
@@ -186,26 +214,39 @@
 						<a href="#"><i class="fa fa-linkedin"></i></a>
 					</div>
 				</div>
-				<div class="col-lg-8">
-					<div class="contact-form-warp">
-						<h4 class="comment-title">Envia sua duvida:</h4>
-						<form class="comment-form">
-							<div class="row">
-								<div class="col-md-6">
-									<input type="text" placeholder="Name">
-								</div>
-								<div class="col-md-6">
-									<input type="email" placeholder="Email">
-								</div>
-								<div class="col-lg-12">
-									<input type="text" placeholder="Subject">
-									<textarea placeholder="Message"></textarea>
-									<button class="site-btn btn-sm">Enviar</button>
+				<div class="col-lg-8 col-md-12">
+					<div class="footer-widget mb-5 mb-md-0">
+						<h4 class="fw-title">Empresa</h4>
+						<div class="latest-blog">
+							<div class="lb-item">
+								<div class="lb-thumb set-bg" data-setbg="img/joao.jpg"></div>
+								<div class="lb-content">
+									<p><h4 style="color:white">Joao Carlos Percegona de Souza<h4></p>
+									<p>João é o mais novo funcionario da empresa JECA_GAMES, ele contribui fechando contratos milhonarios para empresa, ele é fã do Medeiros</p>
+									<a href="#" class="lb-author">By G-Shop Games</a>
 								</div>
 							</div>
-						</form>
+							
+							<div class="lb-item">
+								<div class="lb-thumb set-bg" data-setbg="img/edu.jpg"></div>
+								<div class="lb-content">
+									<p><h4 style="color:white">Eduardo Motter<h4></p>
+									<p>Eduardo Motter é um dos pioneiros na área de venda de jogos Digitais, seu nome é conhecido mundialmente, fator que promove muito a nossa empresa</p>
+									<a href="#" class="lb-author">By Admin</a>
+								</div>
+							</div>
+							<div class="lb-item">
+								<div class="lb-thumb set-bg" data-setbg="img/carlos.jpg"></div>
+								<div class="lb-content">
+									<p><h4 style="color:white">Carlos Daniel Medeiros<h4></p>
+									<p>Carlos Medeiros o que podemos falar dele ? Então ele é nada mais e nada menos que o criador da empresa JECA_GAMES, desenvolvedor do site e mais que isso ele é um delegado famoso</p>
+									<a href="#" class="lb-author">By G-Shop Games</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -218,8 +259,8 @@
 	<footer class="footer-section">
 		<div class="container">
 			<ul class="footer-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="lista-jogos.html">Games</a></li>
+									<li><a href="index.html">Home</a></li>
+				<li><a href="review.html">Games</a></li>
 				<li><a href="categories.html">Blog</a></li>
 				<li><a href="community.html">Forums</a></li>
 				<li><a href="contact.html">Contact</a></li>
