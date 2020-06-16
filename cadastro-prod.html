@@ -2,12 +2,11 @@
 <html lang="zxx">
 
 <head>
-	<title>Game Warrior Template</title>
+	<title>Cadastro de produtos</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Game Warrior Template">
 	<meta name="keywords" content="warrior, game, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon -->
 	<link href="img/favicon.ico" rel="shortcut icon" />
 
 	<!-- Google Fonts -->
@@ -26,8 +25,28 @@
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<style>
+		.mover {
+			position: absolute;
+			top: 85%;
+			left: 85%;
+		}
 
+		.login-page {
+			width: 500px;
+			padding: 3% 0 0;
+			margin: auto;
+		}
 
+		.alinhado {
+			position: relative;
+			z-index: 1;
+			background: #FFFFFF;
+			max-width: 500px;
+			margin: 0 auto 100px;
+			padding: 50px;
+			text-align: center;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+		}
 	</style>
 </head>
 
@@ -45,7 +64,7 @@
 				<img src="img/logo.png" alt="">
 			</a>
 			<div class="user-panel">
-				<a href="Login.html">Entrar</a>
+				<a href="login.html">Login</a> / <a href="cadastro.html">Register</a>
 			</div>
 			<!-- responsive -->
 			<div class="nav-switch">
@@ -54,9 +73,11 @@
 			<!-- site menu -->
 			<nav class="main-menu">
 				<ul>
-					<li><a href="index.html">Início</a></li>
-					<li><a href="lista-jogos.html">Jogos</a></li>
-					<li><a href="Historico.html">Meus jogos</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="lista-jogos.html">Games</a></li>
+					<li><a href="historico.html">Meus jogos</a></li>
+					<li><a href="community.html">Forum</a></li>
+
 				</ul>
 			</nav>
 		</div>
@@ -77,77 +98,35 @@
 		</div>
 	</section> -->
 	<!-- Page info section -->
-
 	<!-- Review section -->
 	<section class="review-section review-dark spad set-bg" data-setbg="img/review-bg-2.jpg">
 		<div class="container">
-			<div class="section-title text-white">
-				<div class="cata new">Produtos Comprados</div>
-				<h2>Jogos</h2>
-			</div>
 			<div class="row text-white">
-				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img/review/1.jpg">
-							<div class="score yellow">9.3</div>
+				<div class="login-page">
+					<div class="alinhado">
+						<div class="section-title text-white">
+							<h2 style="color:blue">Novo jogo</h2>
 						</div>
-						<div class="review-text">
-							<h5>Assasin’’s Creed</h5>
-							<div class="text-center pt-4">
-								<button class="site-btn btn-sm">Baixar</button>
+						<form method="post" action="historico.html">
+							<label style="color:black">Título:</label>
+							<input type="text" class="form-control" id="usuario" name="usuario">
+							<label style="color:black" for="pwd">Valor:</label>
+							<input type="number" class="form-control" id="pwd" name="senha"><br>
+							<div class="form-group">
+								<label style="color:black" for="exampleFormControlTextarea1">Descrição:</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 							</div>
-							<div class="text-center pt-4">
-								<button class="site-btn btn-sm">Saiba mais</button>
+							<label style="color:black" for="exampleFormControlTextarea1">Capa do Jogo:</label>
+							<div class="custom-file">
+								<input type="file" class="custom-file-input" id="customFile">
+								<label class="custom-file-label" for="customFile">Imagem</label>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img/review/2.jpg">
-							<div class="score purple">9.5</div>
-						</div>
-						<div class="review-text">
-							<h5>Doom</h5>
+
+							<br>
 							<div class="text-center pt-4">
-								<button class="site-btn btn-sm">Baixar</button>
+								<button class="site-btn btn-sm">Adicionar</button>
 							</div>
-							<div class="text-center pt-4">
-								<button class="site-btn btn-sm">Saiba mais</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img/review/3.jpg">
-							<div class="score green">9.1</div>
-						</div>
-						<div class="review-text">
-							<h5>Overwatch</h5>
-							<div class="text-center pt-4">
-								<button class="site-btn btn-sm">Baixar</button>
-							</div>
-							<div class="text-center pt-4">
-								<button class="site-btn btn-sm">Saiba mais</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img/review/4.jpg">
-							<div class="score pink">9.7</div>
-						</div>
-						<div class="review-text">
-							<h5>GTA 5</h5>
-							<div class="text-center pt-4">
-								<button class="site-btn btn-sm">Baixar</button>
-							</div>
-							<div class="text-center pt-4">
-								<button class="site-btn btn-sm">Saiba mais</button>
-							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -159,24 +138,22 @@
 	<footer class="footer-section">
 		<div class="container">
 			<ul class="footer-menu">
-				<li><a href="index.html">Início</a></li>
-				<li><a href="lista-jogos.html">Jogos</a></li>
-				<li><a href="Historico.html">Meus jogos</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="lista-jogos.html">Games</a></li>
+				<li><a href="categories.html">Blog</a></li>
+				<li><a href="community.html">Forums</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 			<p class="copyright">
 				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				Copyright &copy;
-				<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
-				with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
-					target="_blank">Colorlib</a>
+				Copyright &copy;<script>
+					document.write(new Date().getFullYear());
+				</script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+					aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 			</p>
 		</div>
 	</footer>
-	<!-- Footer section end -->
-
-
-	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
