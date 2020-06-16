@@ -277,12 +277,14 @@ input[type='password']:focus {
 
 .back-btn {
     border: 1px solid #ffb320;
+    font-weight: bold;
     color: black;
-    background: #fff;
+    background: #fff !important;
 }
 
 .next-btn {
     color: black;
+    font-weight: bold;
     background: #ffb320;
 }
 
