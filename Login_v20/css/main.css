@@ -278,6 +278,16 @@ input.input100 {
   color: #111111;
 }
 
+.input100:not(:focus) {
+  height: 55px;
+}
+
+.input100:not(:focus) + .label-input100 {
+  top: 10px;
+  font-size: 13px;
+  color: #111111;
+}
+
 .has-val {
   height: 55px !important;
 }
@@ -342,7 +352,7 @@ input.input100 {
   height: 100%;
   opacity: 0;
 
-  background: #FFD700;
+  background: #ffc321;
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
