@@ -3,6 +3,17 @@ h3 {
     margin-top: 10px;
 }
 
+.busca {
+    width: 35%;
+    float: left;
+    margin-left: 20px;
+    padding: 1px;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
 .textoGrande{
     font-size: 16px !important;
 }
