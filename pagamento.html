@@ -60,23 +60,26 @@ and open the template in the editor.
 <body>
   <header class="header-section">
     <div class="container">
-      <!-- logo -->
-      <a class="site-logo" href="index.html">
-        <img src="img/logo.png" alt="">
-      </a>
-      <!-- responsive -->
-      <div class="nav-switch">
-        <i class="fa fa-bars"></i>
-      </div>
-      <!-- site menu -->
-      <nav class="main-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="lista-jogos.html">Games</a></li>
-          <li><a href="historico.html">Meus jogos</a></li>
-        </ul>
-      </nav>
-    </div>
+			<!-- logo -->
+			<a class="site-logo" href="index.html">
+				<img src="img/logo.png" alt="">
+			</a>
+			
+			<!-- responsive -->
+			<div class="nav-switch">
+				<i class="fa fa-bars"></i>
+			</div>
+			<!-- site menu -->
+			<nav class="main-menu">
+				<ul>
+					<li><a style="font-size: 18px;" href="index.html">Início</a></li>
+					<li><a style="font-size: 18px;" href="lista-jogos.html">Comprar Jogos</a></li>
+					<li><a style="font-size: 18px;" href="historico.html">Meus Jogos</a></li>
+					<!-- <li><a href="community.html">Forum</a></li> -->
+
+				</ul>
+			</nav>
+		</div>
   </header>
   <div style="padding-left:12%; padding-top:30px;">
     <div class="checkout-panel">
@@ -106,24 +109,23 @@ and open the template in the editor.
 
         <div class="input-fields">
           <div class="column-1">
-            <label for="cardholder">Nome no cartão</label>
+            <label for="cardholder" class="textoGrande">Nome no cartão</label>
             <input type="text" id="cardholder" />
 
             <div class="small-inputs">
               <div>
-                <label for="date">Data de validade</label>
+                <label for="date" class="textoGrande">Data de validade</label>
                 <input type="text" id="date" />
               </div>
 
               <div>
-                <label for="verification">Código de segurança</label>
+                <label for="verification" class="textoGrande">Código de segurança</label>
                 <input type="password" id="verification" />
               </div>
             </div>
-
           </div>
           <div class="column-2">
-            <label for="cardnumber">Número do Cartão</label>
+            <label for="cardnumber" class="textoGrande" >Número do Cartão</label>
             <input type="text" id="cardnumber" />
           </div>
         </div>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            Teste CORS
+        </title>
+    </head>
+</html>
+<body>
+    <br/>
+    <spam id="p1">Chamada Cors</spam>
+    <br/>
+
+    <button onclick="cors();">CORS</button>
+    <script>
+        function cors(){
+            invocation = new XMLHttpRequest();
+            url = 'http://localhost:8080/ServidorTrabalhoWS/webresources/pessoa';
+            //body = '{"nome":"Eduardo", "email":"motter@gmail.com"}';
+
+            invocation.open('GET',url,true);
+            invocation.setRequestHeader('xxx-header','teste');
+            invocation.setRequestHeader('Content-Type','application/json');
+            invocation.onreadystatechange = function (){
+                if (this.readyState === XMLHttpRequest.DONE && this.status === 200){
+                    alert("OK!");
+
+                }
+            }
+            invocation.send();
+        }
+    </script>
+</body>
