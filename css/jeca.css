@@ -313,3 +313,7 @@ input[type='password']:focus {
 .warning {
     border-color: #ffb320;
 }
+
+.adminBG {
+    background-image: url(img/double-bubble-dark.png") !important;
+}
