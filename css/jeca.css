@@ -3,6 +3,10 @@ h3 {
     margin-top: 10px;
 }
 
+.textoGrande{
+    font-size: 16px !important;
+}
+
 .indexContainers {
     height: 480px !important;
 }
